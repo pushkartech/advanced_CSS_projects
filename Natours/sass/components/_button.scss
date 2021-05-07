@@ -34,6 +34,16 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+        border-radius: 10rem;
+
+        &::after { 
+            background-color: $color-primary;
+        }
+    }
+
     &::after {
         content: "";
         display: inline-block;
