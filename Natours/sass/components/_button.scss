@@ -1,4 +1,5 @@
 .btn {
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -19,7 +20,9 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
     }
@@ -38,6 +41,7 @@
         background-color: $color-primary;
         color: $color-white;
         border-radius: 10rem;
+        border: none;
 
         &::after { 
             background-color: $color-primary;
